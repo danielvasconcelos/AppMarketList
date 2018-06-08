@@ -1,0 +1,135 @@
+
+
+.nomeItem {
+	width: 75%;
+	float: left;
+}
+
+.qtdItem{
+	padding-top: 0.1px;
+}
+
+div#botaoplus {
+	margin-left: 90%;
+	margin-bottom: 15px;
+	margin-top: -2px;
+}
+
+a#botaoplus2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-left: 90%;
+    margin-top: -2%;
+    margin-bottom: 6%;
+}
+
+.lista{
+	position: relative;
+	padding: 5px;
+}
+
+input.teste{
+	float: left;
+	margin-left: 1px;
+	margin-top: 5px;
+	position: 0 !important;
+}
+
+input.teste2{
+	width: 185px;
+	padding-left: 10px;
+	padding-top: 8px;
+	border: none;
+}
+
+fieldset#teste3{
+	float: right;
+	margin-left: 1px;
+	margin-top: -4px;
+	margin-left: -8px;
+}
+
+li.lii{
+	padding-top: 0px !important;
+	padding-bottom: -0px !important;
+	margin-bottom: -1% !important;
+}
+
+.footer {
+    position:fixed !important;
+    bottom:0;
+    width:100%;
+}
+
+a.add, a.cancelar{
+	color: #ffffff !important;
+	text-decoration: none;
+}
+
+select.teste4{
+	width: 50px;
+	text-align: right;
+	padding: 5px 0px 5px 0px;
+	margin-top: 28%;
+}
+
+.ui-input-search.ui-shadow-inset.ui-input-has-clear.ui-body-inherit.ui-corner-all {
+    width: 73%;
+}
+
+div.itens{
+	margin-bottom: auto;
+}
+
+
+li.liresumo.ui-li-static.ui-body-inherit.ui-first-child.ui-last-child {
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: -6%;
+    padding-bottom: 0%;
+}
+
+label.descresumo {
+    width: 65%;
+    margin-left: 10%;
+}
+
+
+
+label.totalresumo {
+	width: 50px;
+	text-align: right;
+	margin-left: 70%;
+	margin-top: -23px;
+}
+
+label#tot {
+    color: #555555;
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 35px;
+    padding-bottom: 20px;
+}
+
+a.ui-table-columntoggle-btn.ui-btn.ui-btn-a.ui-corner-all.ui-shadow.ui-mini {
+    display: none;
+}
+
+td {
+    padding-bottom: 0px !important;
+    padding-top:  0px !important;
+}
+
+button.deletar.ui-btn.ui-shadow.ui-corner-all.ui-btn-icon-left.ui-icon-delete {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    margin-left: -8px;
+}
+
+.ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset {
+    margin-left: -8px;
+}

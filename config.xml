@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.hello-world"
+        version   = "1.0.0">
+
+    <name>
+        MarketList
+    </name>
+
+    <description>
+        Lista de Mercado
+    </description>
+
+    <author href="http://phonegap.com" email="dan13vasconcelos@gmail.com">
+        Daniel Vasconcelos
+    </author>
+
+    <preference name="phonegap-version" value="cli-6.3.0" /> 
+
+    <platform name="ios"></platform>
+    <platform name="android"></platform>
+    <platform name="winphone"></platform>
+    
+</widget>

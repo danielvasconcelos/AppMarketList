@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Meu App</title>
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/db.js"></script>
+	<script src="js/controller.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="phonegap.js"></script>
+
+</head>
+<body>
+	<div data-role="page">
+
+		<!-- Menu/Cabeçalho -->
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<h1>Market List</h1>
+			<a href="#outside" data-icon="bars" data-iconpos="notext">Menu</a>
+		</div> <!-- header -->
+
+		
+		<!-- Conteudo -->
+		<div role="main" class="ui-content">
+
+		<div data-role="tabs" id="tabs">
+			
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#itens" data-ajax="false">Lista de Itens</a></li>
+					<li><a href="#resumo" data-ajax="false">Resumo</a></li>
+				</ul>
+
+			</div>
+		
+		<div id="itens" class="ui-body-d ui-content">
+
+			<!-- Botao + (adicionar item -->
+			<a href="#popupLogin" id="botaoplus2" data-rel="popup" data-position-to="window" class="ui-btn ui-shadow ui-corner-all ui-icon-plus ui-btn-icon-notext ui-btn-inline ui-nodisc-icon ui-alt-icon" data-transition="pop" ready="foco()" ></a>	
+
+			
+    		<!-- Lista de Itens -->
+			<ul id="saidaTxt" data-role="listview">
+
+
+				<table data-role="table" id="table-column-toggle" data-mode="columntoggle" class="ui-responsive table-stroke">
+						<tbody id="tb-body">
+										        								
+  
+						</tbody>
+				</table>
+				<br>
+
+				
+			</ul>
+
+			<!-- tela adicionar item -->
+    			<div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+    				<form name="form"> 
+        				<div style="padding:10px 20px;">
+        					<input type="text"  name="novoitem" id="descitem" placeholder="Descrição do Item" data-theme="a" >
+            				<a class="add" href="#itens">
+            				<button type="button" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check" onclick="listaItens();">Add</button></a>
+            				<a class="cancelar" href="#itens">
+            				<button type="button" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-delete" >Cancel</button></a>
+        				</div>
+    				</form>
+				</div>
+
+
+				<!-- link para criar a tela valor do item -->
+				<a href="#precoitem" id="add2" data-rel="popup" data-position-to="window"></a>
+
+				<!-- tela adicionar valor do item -->
+    			<div data-role="popup" id="precoitem" data-theme="a" class="ui-corner-all">
+    				
+
+				</div>
+
+				
+		</div>
+
+			
+
+		<div id="resumo">
+			
+    		    <!-- <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-delete" onclick="limpaTabela();">Excluir Itens</button> -->
+    		    <!-- <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-refresh" onClick=window.location.reload(); >Atualizar Totais</button> -->
+    		    
+    		    <br>
+    		    
+
+			<ul id="resumovalores" data-role="listview">
+				
+
+			</ul>
+
+				
+				<label id="totalGeral">
+					
+				</label>
+	
+	
+		</div>
+
+
+		</div>
+
+
+		</div> <!-- /content-->
+		
+		<br>
+
+		<!-- Rodapé -->
+		<div class="footer" data-role="footer">
+			<h4>marketlist.com</h4>
+		</div>
+		<!-- /footer-->
+
+		<!-- Itens do Menu-->
+		<div data-role="panel" id="outside" data-theme="b">
+			<ul data-role="listview">
+				<li data-icon="black" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-back"><a href="#" data-rel="close">Voltar</a></li>
+				<li><a href="#" data-ajax="false">Lista Atual</a></li>
+				<li><a href="#" onclick="salvarListaBasico();" data-ajax="false">Lista Itens Básicos</a></li>
+				<li><a href="#" onclick="salvarListaFrutasEVerduras();" data-ajax="false">Lista Frutas e Verduras</a></li>
+				<li><a href="#" onclick="salvarListaLanche();" data-ajax="false">Lista Lanche MC</a></li>
+				<li><a href="#" onclick="salvarListaLimpeza();" data-ajax="false">Lista Limpeza</a></li>
+				<li><a href="#" onclick="limpaTabela();" data-ajax="false">Excluir Itens</a></li>
+				<!-- rel="external" ou data-ajax="false"-->
+				<li><a href="sobre.html" data-ajax="false">Sobre</a></li>
+			</ul>
+		</div>
+
+
+	</div> <!-- /page-->
+
+</body>
+</html>
